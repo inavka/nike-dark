@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
+
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -21,28 +22,32 @@
 <body>
 	<main role="main" >
 		<div class="product-card">
-			<div class="product-card__logo">
-				<a href="#"><img src="img/logo.png" alt="Nike Logo"></a>
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="Nike Logo"></a>
 			</div>
-			<div class="product-card-description">
-				<div class="product-card-description__image">
+			<div class="product-image">
+				<div class="product-picture">
 					<img src="img/Nike-SB-Stefan-Janoski-Max.png" alt="Nike SB Stefan Janoski Max">
 				</div>
-				<div class="product-card-description__info">
-					<div class="product-card-description__title">Nike SB Stefan<br>Janoski Max</div>
-					<div class="product-card-description__subtitle">Unisex Skateboarding Shoe</div>
-					<div class="product-card-description__stars">
+				<div class="bullets">
+					<button class="bullets__item black"></button>
+					<button class="bullets__item white"></button>
+					<button class="bullets__item red"></button>
+					<button class="bullets__item blue"></button>
+				</div>
+			</div>
+				<div class="product-info">
+					<div class="product-info__title">Nike SB Stefan<br>Janoski Max</div>
+					<div class="product-info__subtitle">Unisex Skateboarding Shoe</div>
+					<div class="product-info__stars">
 						<img src="img/stars.png">
 					</div>
 					<div>
-						<button class="product-card-description__button">Size<img src="img/Rectangle%202.png"></button>
-						<button class="product-card-description__button">Qty<img src="img/Rectangle%202.png"></button>
+						<button class="product-info__button">Size<img src="img/Rectangle%202.png"></button>
+						<button class="product-info__button">Qty<img src="img/Rectangle%202.png"></button>
 					</div>
-					<button class="product-card-description__button-add-to-cart">Add to cart</button>
+					<button class="product-info__button-add-to-cart">Add to cart</button>
 				</div>
-			<div class="product-card-dots">
-				<button class="product-card-dots__buttons"><img src="img/bullets.png"></button>
-			</div>
 		</div>
 	</main>
 </body>

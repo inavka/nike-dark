@@ -1,6 +1,14 @@
 body{
-	@import url('https://fonts.googleapis.com/css?family=Lato:100');
-	font-family: 'Lato', sans-serif;
+	font-family: "MuseoSansLight", sans-serif;
+}
+@font-face {
+	font-family: "MuseoSansLight";
+	src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+	src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"),
+	url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }
 
 /* Typography */
@@ -75,29 +83,59 @@ body {
 	border-radius: 10px;
 	box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
 }
-.product-card__logo {
-	float: left;
+.logo {
 	margin-top: 25px;
 	margin-left: 20px;
 }
-.product-card-description {
-	margin-top: 75px;
-	font-size: 0;
-}
-.product-card-description__image {
+.product-image {
 	display: inline-block;
 	padding-left: 40px;
 	width: auto;
 	height: auto;
 }
-.product-card-description__info {
+.product-picture {
+	padding-top: 70px;
+}
+.bullets {
+	text-align: center;
+}
+.bullets__item {
+	background: none;
+	border: none;
+
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+.black {
+	background-color: #1f273f;
+}
+.white {
+	background-color: #ffffff;
+	margin-left: 5px;
+}
+.red {
+	background-color: #ed3333;
+	margin-left: 5px;
+}
+.blue {
+	background-color: #29e3ea;
+	margin-left: 5px;
+}
+.bullets__item:hover {
+	width: 14px;
+	height: 14px;
+	border: 2px solid #7e838b;
+}
+.product-info {
 	display: inline-block;
 	width: auto;
 	font-size: 18px;
 	font-weight: 100;
-	padding-left: 30px;
+	padding-left: 75px;
 }
-.product-card-description__title {
+.product-info__title {
 	font-size: 24px;
 	line-height: 26px;
 	font-weight: 100;
@@ -105,17 +143,17 @@ body {
 
 	margin-bottom: 15px;
 }
-.product-card-description__subtitle {
+.product-info__subtitle {
 	font-size: 14px;
 	line-height: 26px;
 	opacity: 0.7;
 
 	margin-bottom: 20px;
 }
-.product-card-description__stars {
+.product-info__stars {
 	margin-bottom: 30px;
 }
-.product-card-description__button {
+.product-info__button {
 	border: 1px solid #4f5560;
 	background: none;
 	height: 30px;
@@ -125,23 +163,21 @@ body {
 	line-height: 18px;
 	opacity: 0.7;
 }
-.product-card-description__button img {
+.product-info__button img {
 	padding-left: 10px;
 }
-.product-card-description__button-add-to-cart {
+.product-info__button:hover {
+	background-color: #202835;
+}
+.product-info__button-add-to-cart {
 	margin-top: 30px;
 	width: 185px;
 	height: 40px;
 
 	opacity: 0.7;
 	border: 1px solid #4f5560;
-	background-color: #202835;
-}
-.product-card-dots {
-	margin-left: 175px;
-	margin-top: 20px;
-}
-.product-card-dots__buttons {
 	background: none;
-	border: none;
+}
+.product-info__button-add-to-cart:hover{
+	background-color: #202835;
 }
